@@ -1,1 +1,1 @@
-from _MozillaCookieJar.py import MozillaCookieJar
+from _MozillaCookieJar import MozillaCookieJar
