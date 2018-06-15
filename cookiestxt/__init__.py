@@ -1,1 +1,1 @@
-from _MozillaCookieJar import MozillaCookieJar
+from ._MozillaCookieJar import MozillaCookieJar

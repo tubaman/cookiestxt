@@ -2,8 +2,13 @@
 
 import re, time
 
-from cookielib import (_warn_unhandled_exception, FileCookieJar, LoadError,
-                       Cookie, MISSING_FILENAME_TEXT)
+try:
+    from http.cookiejar import (_warn_unhandled_exception, FileCookieJar,
+                                LoadError, Cookie, MISSING_FILENAME_TEXT)
+except ImportError:
+    from cookielib import (_warn_unhandled_exception, FileCookieJar, LoadError,
+                           Cookie, MISSING_FILENAME_TEXT)
+
 
 class MozillaCookieJar(FileCookieJar):
     """
